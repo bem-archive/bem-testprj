@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="index.xsl"?>
+<b:block name="prj-page" xmlns:b="b">
+    <b:data>
+        <name>index</name>
+    </b:data>
+    <html:h1 xmlns:html="b:html">bla</html:h1>
+    <html:ul xmlns:html="b:html">
+        <html:li>item1</html:li>
+        <html:li>item2</html:li>
+        <html:li>item3</html:li>
+    </html:ul>
+</b:block>

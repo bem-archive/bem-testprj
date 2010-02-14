@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="faq.xsl"?>
+<b:block name="prj-page" xmlns:b="b">
+    <b:data>
+        <name>faq</name>
+    </b:data>
+    <b:block name="serp-list">
+        <b:mod name="mod1" val="val1"/>
+        <b:mix>
+            <b:block name="bla">
+                <b:mod name="mod3" val="val3"/>
+            </b:block>
+            <b:elem name="alb" block="bla2"/>
+        </b:mix>
+        <b:block name="serp-item">
+            <b:elem name="bla-number" block="serp-item">
+                <b:mod name="mod2" val="val2"/>
+                <b:mix>
+                    <b:block name="bla-bla"/>
+                    <b:elem name="bla" block="bla-bla2">
+                        <b:mod name="mod4" val="val4"/>
+                    </b:elem>
+                </b:mix>
+            </b:elem>
+            <b:elem name="number" block="serp-item">1</b:elem>
+            <b:elem name="title" block="serp-item"><b:data url="http://company.yandex.ru"/>Компания Яндекс</b:elem>
+            <b:elem name="text" block="serp-item">Яндекс — крупнейшая российская интернет-компания. Каждый будний день страницы Яндекса посещают более пятнадцати миллионов человек (данные на октябрь 2009 года) — из России, Украины и других стран.</b:elem>
+        </b:block>
+    </b:block>
+</b:block>
