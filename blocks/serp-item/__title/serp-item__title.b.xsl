@@ -1,23 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0"
-    xmlns:x="http://www.yandex.ru/xscript"
-    xmlns:b="b"
-    xmlns:d-xsl="b:xsl"
-    extension-element-prefixes="x"
-    exclude-result-prefixes="b d-xsl"
-    >
+    xmlns:bb="bem-b"
+    xmlns:tb="bem-b:template:block" xmlns:te="bem-b:template:elem" xmlns:tm="bem-b:template:mod" xmlns:mode="bem-b:template:mode"
+    xmlns:b="bem-b:block" xmlns:e="bem-b:elem" xmlns:m="bem-b:mod" xmlns:mix="bem-b:mix"
+    xmlns:d-xsl="bem-b:xsl:dynamic"
+    exclude-result-prefixes="bb d-xsl">
 
-    <xsl:template match="b:elem[@block = 'serp-item' and @name = 'title']" mode="b:node-name">h3</xsl:template>
-
-    <xsl:template match="b:elem[@block = 'serp-item' and @name = 'title']" mode="b:content">
-        <b:elem name="title-link" block="serp-item">
-            <b:data>
-                <url>
-                    <d-xsl:value-of select="substring-before(b:data/@url, '/')"/>
-                </url>
-            </b:data>
-            <xsl:apply-templates/>
-        </b:elem>
-    </xsl:template>
+    <tb:serp-item>
+        <te:title>
+            <mode:tag>h3</mode:tag>
+            <mode:content>
+                <e:title-link b="serp-item" url="{@url}">
+                    <xsl:apply-templates/>
+                </e:title-link>
+            </mode:content>
+        </te:title>
+    </tb:serp-item>
 
 </xsl:stylesheet>
