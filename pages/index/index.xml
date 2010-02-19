@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="index.xsl"?>
-<b:prj-page xmlns:b="bem-b:block" xmlns:e="bem-b:elem" xmlns:m="bem-b:mod" xmlns:mix="bem-b:mix">
+<b:page xmlns:b="bem-b:block" xmlns:e="bem-b:elem" xmlns:m="bem-b:mod" xmlns:mix="bem-b:mix">
     <e:layout m:type="horiz">
         <b:round-corn>
             <mix:mix>
@@ -10,4 +10,4 @@
             <b:bla tag="span"><e:blabla tag="i"/></b:bla>
         </b:round-corn>
     </e:layout>
-</b:prj-page>
+</b:page>
