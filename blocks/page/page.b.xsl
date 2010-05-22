@@ -8,10 +8,16 @@
 
     <tb:page>
         <mode:content>
-            <b:html-page>
-                <e:head>
+            <b:html-page xsl-inline="yes">
+                <e:head b="html-page" xsl-inline="yes">
                     <e:css b="page">bla</e:css>
+                    <e:css b="page" xsl-inline="yes">
+                        <xsl:value-of select="@bla"/>
+                    </e:css>
                     <e:js b="page">bla</e:js>
+                    <e:js b="page" xsl-inline="yes">
+                        <xsl:value-of select="@bla"/>
+                    </e:js>
                 </e:head>
                 <xsl:apply-templates/>
             </b:html-page>
