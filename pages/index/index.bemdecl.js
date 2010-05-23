@@ -1,34 +1,75 @@
 exports.blocks = [
     {
-        name: 'b'
+        "name": "b"
     },
     {
-        name: 'html-page'
+        "name": "html"
     },
     {
-        name: 'page'
-    },
-    {
-        name: 'layout'
-    },
-    {
-        name: 'prj-page'
-    },
-    {
-        name: 'serp-item',
-        elems: [
+        "name": "page",
+        "elems": [
             {
-                name: 'number',
+                "name": "layout",
+                "mods": [
+                    {
+                        "name": "type",
+                        "vals": [
+                            "horiz"
+                        ]
+                    }
+                ]
             },
             {
-                name: 'title-link'
+                "name": "css"
             },
             {
-                name: 'title'
+                "name": "js"
             }
         ]
     },
     {
-        name: 'html'
+        "name": "round-corn"
+    },
+    {
+        "name": "png"
+    },
+    {
+        "name": "layout",
+        "elems": [
+            {
+                "name": "qqq"
+            }
+        ]
+    },
+    {
+        "name": "bla",
+        "elems": [
+            {
+                "name": "blabla"
+            }
+        ]
+    },
+    {
+        "name": "html-page",
+        "elems": [
+            {
+                "name": "css"
+            },
+            {
+                "name": "js"
+            },
+            {
+                "name": "head"
+            },
+            {
+                "name": "body"
+            },
+            {
+                "name": "meta"
+            },
+            {
+                "name": "favicon"
+            }
+        ]
     }
 ];
